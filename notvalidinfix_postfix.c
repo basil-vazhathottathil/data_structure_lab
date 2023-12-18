@@ -11,8 +11,10 @@ int priority(char operator)
 {
     if (operator == '+' || operator == '-')
         return 1;
-    else if (operator == '*' || operator == '/')
+    if (operator == '*' || operator == '/')
         return 2;
+    if(operator == '^')
+        return 3;
     return 0;
 }
 
